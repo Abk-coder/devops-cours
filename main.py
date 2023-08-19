@@ -8,7 +8,7 @@ redis_client = redis.Redis(host="redis", port=6379, db=0, decode_responses=True)
 
 @app.get("/")
 def home():
-    return {"message": "Hello DIC2!"}
+    return {"message": "Hello, DIC2!"}
 
 
 @app.get("/visited")
