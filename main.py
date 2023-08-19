@@ -14,7 +14,7 @@ def home():
 @app.get("/visited")
 def read_user_visits():
     visits = redis_client.incr("visits")
-    return {"Hellooooo": "DIC2!", "visits": visits}
+    return {"Hello": "DIC2!", "visits": visits}
 
 
 @app.get("/users")

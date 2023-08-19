@@ -18,4 +18,4 @@ def test_visited_endpoint(mock_incr):
 
     response = client.get("/visited")
     assert response.status_code == 200
-    assert response.json() == {"Hellooooo": "DIC2!", "visits": 2}
+    assert response.json() == {"Hello": "DIC2!", "visits": 2}
